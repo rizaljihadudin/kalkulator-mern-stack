@@ -1,0 +1,25 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJSaXphbCBBbGRpbiIsImVtYWlsIjoiZW1haWwyMUB0ZXN0LmNvbSIsImlhdCI6MTY2OTg5OTA5MCwiZXhwIjoxNjY5ODk5MTEwfQ.yTtuV5-F8wHfr5eWpQreL28nu0zE7Mz1LZO9KhZsrYI
+
+
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Rizal Aldin",
+    "email": "email21@test.com",
+    "password" : "1234567",
+    "confPassword" : "1234567"
+}
+
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "email21@test.com",
+    "password" : "1234567"
+}
