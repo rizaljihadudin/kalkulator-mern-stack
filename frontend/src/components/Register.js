@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios  from 'axios';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Register = () => {
     const  [name, setName ] = useState('');
@@ -68,6 +68,7 @@ const Register = () => {
                                         <input type="password" className='input' placeholder='********' value={confPassword} onChange={(e) => setConfPassword(e.target.value)}/>
                                     </div>
                                 </div>
+                                <Link to="/" onClick={(e) => { e.preventDefault(); navigate("/");}}>Login disini</Link>
                                 <div className="field mt-5">
                                     <button className='button is-success is-fullwidth'>Register</button>
                                 </div>

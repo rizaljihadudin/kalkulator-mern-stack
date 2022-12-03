@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Login = () => {
 
@@ -48,6 +48,7 @@ const Login = () => {
                                     <input type="password" className='input' placeholder='********'  value={ password } onChange={(e) => setPassword(e.target.value)}/>
                                 </div>
                             </div>
+                            <Link to="register" onClick={(e) => { e.preventDefault(); navigate("/register");}}>Silahkan registrasi disini</Link>
                             <div className="field mt-5">
                                 <button className='button is-success is-fullwidth'>Login</button>
                             </div>
