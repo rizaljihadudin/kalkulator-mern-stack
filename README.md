@@ -49,8 +49,16 @@ $ cd backend
 $ nodemon index
 ```
 
+```
+$ cd ./frontend
+```
 
-menggunakan MySQL - ExpressJs - React
+```
+$ npm start
+```
 
-user login : email@test.com
-password : 123456
+# note
+
+- user login : email@test.com
+- password : 123456
+
